@@ -1,3 +1,5 @@
+require 'json'
+
 module PactExample
   class MyModel
     attr_accessor :name
@@ -10,10 +12,5 @@ module PactExample
       other.is_a?(MyModel) && other.name == name
     end
 
-    def to_json
-      {
-        name: @name
-      }
-    end
   end
 end

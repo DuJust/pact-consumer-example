@@ -3,6 +3,7 @@ Dir['../lib/**/*.rb'].each { |f| require f }
 
 require 'rspec/core'
 require 'rspec/its'
+require 'rack/test'
 
 RSpec.configure do |config|
   config.color = true

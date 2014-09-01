@@ -1,0 +1,30 @@
+{
+  "provider": {
+    "name": "Pact Example Service Provider"
+  },
+  "consumer": {
+    "name": "Pact Example Service Consumer"
+  },
+  "interactions": [
+    {
+      "description": "a request for model",
+      "provider_state": "model exists",
+      "request": {
+        "method": "get",
+        "path": "/models/du"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "du"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
